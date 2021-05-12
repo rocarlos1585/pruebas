@@ -1,58 +1,30 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "moderatRegular";
+  src: url("./recursos/Moderat-Regular.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "moderatBold";
+  src: url("./recursos/Moderat-Bold.ttf");
 }
 
 .headerContainer{
   width: 100%;
-  height: 10vh;
+  height: 100px;
   background-color: black;
 }
 
 .headerContainer img{
+  position:sticky;
   float: left;
   width: 250px;
-  margin: 15px;
+  margin: 30px;
 }
 
 .menuContainer{
   margin-top:0%;
   position:absolute;
-  width: 150px;
+  width: 180px;
   height:100vh;
   background-color:#efefef;
 }
@@ -84,7 +56,17 @@
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-  border: solid gray 2px;
+  /*border: solid gray 2px;*/
+  box-shadow: 1px 5px 5px 1px #707070;
+  font-family: 'moderatRegular';
+}
+
+.nav-link{
+  color:#707070;
+}
+
+.nav-tabs .nav-link.active{
+  border-top: #C3353F solid 3px;
 }
 
 .filtroPedidosContainer{
@@ -95,9 +77,11 @@
   margin-top: 5%;
   /*border: solid gray 2px;*/
   text-align: left;
+  font-family: 'moderatRegular';
 }
 
 .filtroPedidosContainer h2{
   font-size: 1.5rem;
   margin-bottom: 20px;
+  font-family: 'moderatBold';
 }
